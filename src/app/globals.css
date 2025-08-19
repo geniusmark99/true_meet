@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --true-meet:
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #000;
+  /* black circle */
+  color: #fff !important;
+  /* white arrow */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #333;
+  /* dark gray on hover */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background: #333 !important;
+  /* dark gray default */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+  /* black active */
+  opacity: 1;
+  transform: scale(1.2);
+  /* make it pop */
+}

@@ -1,0 +1,209 @@
+/*.loveContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loveSvg {
+    width: 40px;
+    height: 40px;
+    fill: #e11d48;
+    filter: drop-shadow(0 0 15px rgba(225, 29, 72, 0.5));
+    animation: pulse 2.5s infinite ease-in-out;
+}
+
+@media (width >=64rem) {
+    .loveSvg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 8px rgba(225, 29, 72, 0.5));
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(225, 29, 72, 0.9));
+    }
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 192, 203, 0.8);
+    animation: floatUp 6s infinite ease-in;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.bubble:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    right: 25%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    left: 40%;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+}
+
+.bubble:nth-child(4) {
+    width: 18px;
+    height: 18px;
+    right: 40%;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+}
+
+.bubble:nth-child(5) {
+    width: 12px;
+    height: 12px;
+    left: 60%;
+    animation-duration: 5.5s;
+    animation-delay: 2.2s;
+}
+    */
+
+
+.loveContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loveSvg {
+    width: 40px;
+    height: 40px;
+    fill: #10b981;
+    /* emerald-500 */
+    filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.5));
+    animation: pulse 2.5s infinite ease-in-out;
+}
+
+@media (width >=64rem) {
+    .loveSvg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.5));
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.9));
+    }
+}
+
+/* Floating bubble effect */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(110, 231, 183, 0.8);
+    /* emerald-300-ish */
+    animation: floatUp 6s infinite ease-in;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Multiple bubble variations */
+.bubble:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    right: 25%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    left: 40%;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+}
+
+.bubble:nth-child(4) {
+    width: 18px;
+    height: 18px;
+    right: 40%;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+}
+
+.bubble:nth-child(5) {
+    width: 12px;
+    height: 12px;
+    left: 60%;
+    animation-duration: 5.5s;
+    animation-delay: 2.2s;
+}
