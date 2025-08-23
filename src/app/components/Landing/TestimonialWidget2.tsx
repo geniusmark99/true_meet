@@ -25,18 +25,18 @@ const testimonials: Testimonial[] = [
         id: 2,
         title: "Mark Found His Business Partner on True meet Bizz.",
         subtitle: "Together They Launched a Startup That Raised Seed Funding.",
-        image: "/images/lovers-two.jpg",
+        image: "/images/hero-bg-image.jpg",
     },
     {
         id: 3,
         title: "Sophie Met Her Best Friend on True meet For Friends.",
         subtitle: "They Now Travel The World Together.",
-        image: "/images/lovers-three.jpg",
+        image: "/images/landing-section.webp",
     },
 ];
 
 
-const TestimonialWidget = () => {
+const TestimonialWidget2 = () => {
     return <>
         <section className="w-full bg-white py-12 px-4 md:px-10">
             <motion.h2
@@ -92,4 +92,4 @@ const TestimonialWidget = () => {
     </>
 }
 
-export default TestimonialWidget;
+export default TestimonialWidget2;

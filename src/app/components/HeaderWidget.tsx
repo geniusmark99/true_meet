@@ -21,11 +21,12 @@ const HeaderWidget = () => {
     return <>
         <nav
             // className="w-full fixed top-0 left-0 z-50 bg-linear-120 from-emerald-500 to-green-600 shadow-md"
-            className="w-full fixed top-0 left-0 z-50 bg-emerald-600
+            className="w-full fixed top-0 left-0 z-50 
+            bg-emerald-950 border-b border-emerald-500
             bg-[url('/images/pattern.svg')] bg-[length:40px_40px]
              shadow-md"
         >
-            <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div className="lg:px-20 mx-auto px-4 py-3 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/">
                     <div className="flex items-center space-x-2">
@@ -40,16 +41,16 @@ const HeaderWidget = () => {
                 <div className="hidden md:flex space-x-6 text-lg text-white">
                     {navItems.map((item) => (
                         <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`} key={item} className="relative group">
-                            <span className="hover:text-emerald-900 cursor-pointer">{item}</span>
+                            <span className="hover:text-emerald-500 cursor-pointer">{item}</span>
 
                             <div className="absolute -top-2 opacity-0 group-hover:opacity-100 transition scale-75 group-hover:scale-100 translate-y-1 group-hover:translate-y-0  right-0  group-hover:block">
-                                <svg className="size-3 transition scale-95 group-hover:scale-105 fill-emerald-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" >
+                                <svg className="size-3 transition scale-95 group-hover:scale-105 fill-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" >
                                     <path d="M15 7C8.9424416 7 4 11.942442 4 18C4 22.096154 7.0876448 25.952899 10.851562 29.908203C14.615481 33.863507 19.248379 37.869472 22.939453 41.560547 A 1.50015 1.50015 0 0 0 25.060547 41.560547C28.751621 37.869472 33.384518 33.863507 37.148438 29.908203C40.912356 25.952899 44 22.096154 44 18C44 11.942442 39.057558 7 33 7C29.523564 7 26.496821 8.8664883 24 12.037109C21.503179 8.8664883 18.476436 7 15 7 z" />
                                 </svg>
                             </div>
 
                             <div className="absolute -bottom-1 opacity-0 group-hover:opacity-100 transition scale-75 group-hover:scale-100 translate-y-1 group-hover:translate-y-0 -left-1 group-hover:block">
-                                <svg className="size-2 transition scale-95 group-hover:scale-105 fill-emerald-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" >
+                                <svg className="size-2 transition scale-95 group-hover:scale-105 fill-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" >
                                     <path d="M15 7C8.9424416 7 4 11.942442 4 18C4 22.096154 7.0876448 25.952899 10.851562 29.908203C14.615481 33.863507 19.248379 37.869472 22.939453 41.560547 A 1.50015 1.50015 0 0 0 25.060547 41.560547C28.751621 37.869472 33.384518 33.863507 37.148438 29.908203C40.912356 25.952899 44 22.096154 44 18C44 11.942442 39.057558 7 33 7C29.523564 7 26.496821 8.8664883 24 12.037109C21.503179 8.8664883 18.476436 7 15 7 z" />
                                 </svg>
                             </div>
@@ -76,15 +77,17 @@ const HeaderWidget = () => {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="md:hidden bg-white w-full px-6 py-4 space-y-4  text-lg"
+                    className="md:hidden bg-emerald-950 w-full px-6 py-4 flex flex-col gap-y-3"
                 >
                     {navItems.map((item) => (
                         <Link
                             href={`/${item.toLowerCase().replace(/ /g, "-")}`}
                             key={item}
-                            onClick={() => setIsOpen(false)}
+                            // onClick={() => setIsOpen(false)}
+                            className="cursor-pointer block rounded-xl w-full px-5 text-white py-2 bg-white/0.1 hover:bg-white/20 backdrop-blur transition border border-white/10"
+
                         >
-                            <span className="block py-2 hover:bg-emerald-500 px-2 rounded-lg transition hover:text-white cursor-pointer">
+                            <span className="py-2  px-2 ">
                                 {item}
                             </span>
                         </Link>
@@ -120,8 +123,10 @@ const HeaderWidget = () => {
 
                         <Link
                             href="#"
+                            className="cursor-pointer rounded-2xl px-5 py-1 bg-white/10 hover:bg-white/20 backdrop-blur transition border border-white/10"
+
                         >
-                            <span className="block py-2 hover:bg-emerald-500 px-2 rounded-lg transition hover:text-white cursor-pointer">
+                            <span className="block py-2 text-white px-2 rounded-lg transition cursor-pointer">
                                 Sign Up
                             </span>
                         </Link>

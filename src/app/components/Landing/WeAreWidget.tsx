@@ -32,9 +32,9 @@ const WeAreWidget = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-3xl md:text-5xl font-extrabold text-center mb-12"
+                className="text-3xl md:text-5xl text-emerald-950 font-extrabold text-center mb-12"
             >
-                WE’RE NOT JUST FOR DATING
+                WE&apos;RE NOT JUST FOR DATING
             </motion.h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-20 max-w-6xl mx-auto">
@@ -55,10 +55,10 @@ const WeAreWidget = () => {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h3 className="mt-4 text-lg md:text-xl font-semibold">
+                        <h3 className="mt-4 text-lg text-emerald-900 md:text-xl font-semibold">
                             {feature.title}
                         </h3>
-                        <p className="mt-2 text-gray-600 text-sm md:text-base">
+                        <p className="mt-2 text-emerald-800 text-sm md:text-base">
                             {feature.desc}
                         </p>
                     </motion.div>
