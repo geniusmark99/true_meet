@@ -129,9 +129,9 @@ export default function SmoothScrollShowcase() {
     return <>
         <HeaderWidget />
         <div className="relative bg-emerald-950 ">
-            <div className="absolute top-10">
+            {/* <div className="absolute top-10">
                 <div className="rounded-full size-20 bg-red-900"></div>
-            </div>
+            </div> */}
             <div className="">
                 {/* ref={containerRef} data-scroll-container */}
                 <section
