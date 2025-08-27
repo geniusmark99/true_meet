@@ -1,11 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
+import React from "react";
+import { motion} from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HeaderWidget, FooterWidget, AnimatedWidget } from "./components";
 import { FeatureWidget, WeAreWidget, TestimonialWidget, HeroSwiperWidget } from "./components/Landing";
 

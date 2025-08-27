@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
 import { ComingSoonWidget } from "./components";
 
 export default function NotFound() {
