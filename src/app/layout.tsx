@@ -11,6 +11,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "True meet",
+  themeColor: "#002C22",
   description: "Find your perfect match",
 };
 
@@ -22,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden">
+      <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      </head>
       <body
         className={`${montserrat.variable} antialiased overflow-x-hidden`}
       >

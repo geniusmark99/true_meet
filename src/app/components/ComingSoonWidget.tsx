@@ -43,14 +43,14 @@ export default function ComingSoonWidget() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="mt-8 flex items-center bg-white/10 backdrop-blur-md rounded-full p-2 w-[90%] max-w-md"
+                className="mt-8 flex items-center bg-white/10 backdrop-blur-md rounded-full p-1.5 md:p-2 w-[90%] max-w-md"
             >
                 <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-2 bg-transparent text-white placeholder-gray-400 focus:outline-none"
+                    className="flex-1 md:px-4 px-1.5 md:py-2 bg-transparent text-white placeholder-gray-400 focus:outline-none"
                 />
-                <button className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-full font-medium">
+                <button className="px-5 text-xs sm:text-sm py-2 bg-emerald-600 hover:bg-emerald-700 rounded-full font-medium">
                     Notify Me
                 </button>
             </motion.div>
